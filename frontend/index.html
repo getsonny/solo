@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carson Dively</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <img src="resources/download.jpg" alt="logo" class="logo">
+    <div>
+        <h1>IST 256 Blog</h1>
+        <h4>Sign in to create a blog and then like and comment on posts</h4>
+    </div>
+</header>
+
+<div class="content">
+
+    <div class="sidebar">
+
+        <div id="LoginFormContainer">
+            <h3>Login</h3>
+            <form id="LoginForm">
+                <div class="form-grpup">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" name="username" required>
+                </div>
+                <div class="form-grpup">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="password" name="password" required>
+                 </div>
+                <button type="submit" class="btn btn-primary">Login</button>
+            </form>
+            <br>
+            <div id="validation"></div>
+        </div>
+
+        <div id="blogForm">
+            <div id="blogFormContainer" style="display: none">
+                <div id="userGreeting"></div>
+                <h3>Create a New Blog Post</h3>
+                <form id="blogPostForm">
+                    <div class="form-grpup">
+                        <label for="postTitle">Username</label>
+                        <input type="text" class="form-control" id="postTitle" name="postTitle" required>
+                    </div>
+                    <div class="form-grpup">
+                        <label for="postContent">Password</label>
+                        <textarea type="text" class="form-control" id="postContent" name="postContent" rows="5"required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit Post</button>
+                </form>
+                <br>
+                <div id="postvalidation"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="displayedPage">
+        <h1>Latest Blog Posts</h1>
+        <div id="blogPosts"></div>
+    </div>
+</div>
+<footer>
+
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
